@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- ------------------- favicon ---------------  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+  <link rel="manifest" href="img/fav/site.webmanifest">
+  <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- --------------- end ---------------  -->
+
+  <!-- ----------------- meta tags -----------------------  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- --------------- end ------------------  -->
+
+  <title>Movi House</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ------------- pre-loader --------------- -->
+  <div title="Pre Loader" class="preloading">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ---------------- end --------------------------  -->
+
+  <!-- ------------------- scroll up btn -----------------  -->
+  <div id="scrollup" title="Go to top" onclick="document.documentElement.scrollTop = 0;">&xutri;</div>
+  <!-- ------------ end -------------  -->
+
+  <!-- ----------------scroll indicator------------ -->
+  <div title="Scroll Indicator" class="headertoop">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <!-- -------------end------------ -->
+
+  <!-- -------------------------- Alerts about author ---------------  -->
+  <div class="alert" title="Janak Kumar shrestha">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Info!</strong>&MediumSpace;Authors' portfolio website is &Rarr; &MediumSpace; &Lang;<a target="_blank"
+      href="www.janakkumarshrestha0.com.np">www.janakkumarshrestha0.com.np</a>&Rang;
+  </div>
+  <!-- ------------------- end ----------------  -->
+
+  <!-- ------------- navbar ----------------- -->
+  <nav title="Navigation Bar" id="navbar">
+    <div class="wrapper">
+      <div class="logo"><a href="#"><img src="./img/logo.png" alt=""></a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" onclick="this.parentElement.parentElement.parentElement.style.display='none';"
+          class="btn close-btn">
+          <i style="font-size: 45px;">&times;</i>
+        </label>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#" class="desktop-item">Dropdown Menu</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <ul class="drop-menu">
+            <li><a href="#">Drop menu 1</a></li>
+            <li><a href="#">Drop menu 2</a></li>
+            <li><a href="#">Drop menu 3</a></li>
+            <li><a href="#">Drop menu 4</a></li>
+            <div class="dropdown2">
+              <li> <a class="dropBtn2" href="#">More
+                  <i style="font-size:25px;">&ctdot;</i>
+                </a></li>
+              <ul class="drop-content2">
+                <li> <a href="#">HTML</a></li>
+                <li> <a href="#">CSS</a></li>
+                <li> <a href="#">JavaScript</a></li>
+                <li> <a href="#">jQuery</a></li>
+              </ul>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Mega Menu</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Mega Menu</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="./img/1.jpg" alt="">
+              </div>
+              <div class="row">
+                <header>Design Services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Graphics</a></li>
+                  <li><a href="#">Vectors</a></li>
+                  <li><a href="#">Business cards</a></li>
+                  <li><a href="#">Custom logo</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Email Services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Personal Email</a></li>
+                  <li><a href="#">Business Email</a></li>
+                  <li><a href="#">Mobile Email</a></li>
+                  <li><a href="#">Web Marketing</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Security services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Site Seal</a></li>
+                  <li><a href="#">VPS Hosting</a></li>
+                  <li><a href="#">Privacy Seal</a></li>
+                  <li><a href="#">Website design</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Feedback</a></li>
+        <li><a onclick="document.getElementById('subModal').style.display='block'" style="width:auto;">Newsletter</a>
+        </li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i style="font-size: 45px;">&equiv;</i></label>
+    </div>
+  </nav>
+  <!-- ------------ end ---------------- -->
+
+  <!-- ----------- scbscribe Newslatter Modal box ------------------------ -->
+  <div id="subModal" class="modal">
+    <div class="top">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+      <span id="close-btn" onclick="this.parentElement.parentElement.style.display='none';"> &times; </span>
+    </div>
+
+    <form class="modal-content" method="post">
+      <div class="imgcontainer">
+        <img src="./img/logo.png" alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="sub-email" onfocus="this.value=''" placeholder="Enter your e-mail ..." name="email"
+          required>
+
+        <!-- ------------------- beautiful send btn -------------  -->
+        <div class="button-area">
+          <button class="button-n" type="submit" value="Submit">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor"
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <span>Send</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- --------------------- end ----------------------  -->
+
+  <!-- ------------------- pop up windows box -------------- -->
+  <div class="window-container">
+    <div class="top">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+      <span id="close-btn" onclick="this.parentElement.parentElement.style.display='none';"> &times; </span>
+    </div>
+
+    <div class="content">
+      <h3>Bookmark Me &star;</h3>
+      <p><strong style="color: #a11101;"> Hey Honey</strong>, Don't leave me, we're here for entertainment. <strong><a
+            href="#">Get Fun.</a></strong> 18+ is here<strong><a style="color: red;font-size:20px"
+            href="#">...</a></strong></p>
+    </div>
+  </div>
+  <!-- ----------------- end --------------  -->
+
+  <!-- ------------------- Hoverable left Sidenav Buttons --------------------- -->
+  <div id="mySidenav" class="mysideBar">
+    <a href="#" id="about">About<i style="font-size: 20;">&raquo;</i></a>
+    <a href="#" id="blog">Blog<i style="font-size: 20;">&raquo;</i></a>
+    <a href="#" id="projects">Projects<i style="font-size: 20;">&raquo;</i></a>
+    <a href="#" id="contact">Contact<i style="font-size: 20;">&raquo;</i></a>
+  </div>
+  <!-- ------------- end -------------------  -->
+
+  <!-- ------------------- Hoverable right Sidenav Buttons --------------------- -->
+  <div id="myRightSidenav" class="mysideBar">
+    <a href="#" id="about">About<i style="font-size: 20;">&laquo;</i></a>
+    <a href="#" id="blog">Blog<i style="font-size: 20;">&laquo;</i></a>
+    <a href="#" id="projects">Projects<i style="font-size: 20;">&laquo;</i></a>
+    <a href="#" id="contact">Contact<i style="font-size: 20;">&laquo;</i></a>
+  </div>
+  <!-- ------------- end -------------------  -->
+
+  <!-- ----------------- background video and its elements with search icon -------------------------  -->
+  <section id="backvid">
+    <div class="search">
+      <div>
+        <input type="search" onfocus="this.value=''" title="Search anything here . . ." placeholder="Search . . ."
+          required>
+      </div>
+    </div>
+
+    <h1>What the fuck is this? 👋</h1>
+    <p>We're good. we're the fucking best. Never, ever don't talk even a single negative word yourself in your fucking
+      life.</p>
+    <p id="button">We're Fucking Genius.</p>
+    <video class="video-background" poster="./img/1.jpg" autoplay muted loop>
+      <source src="./img/s_1.mp4" type="video/mp4">
+    </video>
+  </section>
+  <!-- ---------------- end ------------------------  -->
+
+  <!-- ------------- half background image, particles and windows in center ------------ -->
+  <div class="backBGContain">
+    <div class="backbg"></div>
+    <div class="loader">
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+      <span style="--i: 4"></span>
+      <span style="--i: 5"></span>
+      <span style="--i: 6"></span>
+      <span style="--i: 7"></span>
+      <span style="--i: 8"></span>
+      <span style="--i: 9"></span>
+      <span style="--i: 10"></span>
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 20"></span>
+    </div>
+
+    <!-- -------------------------- clock ---------------------  -->
+    <div class="Shrestha">
+      <div class="Kumar">
+        <span class="clock-time"></span>
+        <span class="clock-ampm"></span>
+      </div>
+      <div>
+        <div class="info date">
+          <div>Janak</div>
+        </div>
+        <div class="info day">
+          <div>Shrestha</div>
+        </div>
+        <a id="clockBase" href="https://www.linkedin.com/in/janakkrshrestha/">Janak kumar shrestha</a>
+      </div>
+      <div class="dot"></div>
+      <div>
+        <div class="hour-hand"></div>
+        <div class="minute-hand"></div>
+        <div class="second-hand"></div>
+        <div class="current-seconds"></div>
+      </div>
+      <div>
+        <span class="h1">1</span>
+        <span class="h2">2</span>
+        <span class="h3">3</span>
+        <span class="h4">4</span>
+        <span class="h5">5</span>
+        <span class="h6">6</span>
+        <span class="h7">7</span>
+        <span class="h8">8</span>
+        <span class="h9">9</span>
+        <span class="h10">10</span>
+        <span class="h11">11</span>
+        <span class="h12">12</span>
+      </div>
+      <div class="diallines"></div>
+    </div>
+    <!-- ---------------- end --------------------  -->
+
+    <div class="windows-container">
+      <div class="top">
+        <span class="dot" style="background:#ED594A;"></span>
+        <span class="dot" style="background:#FDD800;"></span>
+        <span class="dot" style="background:#5AC05A;"></span>
+        <span id="close-btn" onclick="this.parentElement.parentElement.style.display='none';"> &times; </span>
+        <a target="_blank" href="https://www.janakkumarshrestha0.com.np"> <input type="text"
+            value="janakkumarshrestha0.com.np/"></a>
+      </div>
+
+      <div style="display: absolute; width:100%; height:96%; background-color: #ffffff85;">
+        <iframe src="./cards.html"></iframe>
+      </div>
+    </div>
+
+    <div title="Brand Name" class="titletext">
+      <h1 class="titleinner"><span class="titlefront"><b>Movi</b></span> <span class="titleback">House</span>
+      </h1>
+    </div>
+  </div>
+  <!-- --------------- end --------------- -->
+
+  <!-- start of footer -->
+  <footer title="Footer section" id="footer_wrapper">
+    <div id="footer">
+      <ul class="footer_menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">CSS Templates</a></li>
+        <li><a href="#">Flash Resources</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Company</a></li>
+        <li class="last_menu"><a href="#">Contact</a></li>
+      </ul>
+      <hr style="margin:10px auto;width:60%;border-color: #fff;">
+      Copyright &COPY;
+      <script>document.write(new Date().getFullYear());</script>
+      &nbsp; All rights reserved. <br>
+      <hr style="margin:10px auto;width:40%;border-color: #fff;"><a href="#"><span>Janak0ff </span></a>
+      &MediumSpace;|&MediumSpace; Designed by <a href="https://www.linkedin.com/in/janakkrshrestha/"
+        title="Developer and Designer of this site"><span id="janakkumarshrestha">&Rarr;&Tab;&Lang; &Jopf; &aopf; &nopf;
+          &aopf; &kopf;
+          &MediumSpace; &Kopf; &uopf; &mopf; &aopf; &ropf; &MediumSpace; &Sopf; &hopf; &ropf; &eopf; &sopf; &topf;
+          &hopf; &aopf; &Rang;</span>
+      </a>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
