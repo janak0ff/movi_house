@@ -581,8 +581,9 @@ nav input {
 }
 
 #subModal>form>.imgcontainer>img.avatar {
+  margin-top: 5px;
   border-radius: 5%;
-  width: 100px;
+  width: 150px;
   height: 80px;
 }
 
